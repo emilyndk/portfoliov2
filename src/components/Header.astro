@@ -1,0 +1,81 @@
+---
+import Button from "./Button.astro"
+import Link from "./Link.astro"
+---
+
+
+<div class="relative">
+  <!-- Burger Icon -->
+  <button
+  id="burger-button"
+  class="z-50 md:hidden flex items-center justify-center w-10 h-10 rounded-full absolute top-4 right-4 transition-transform duration-300"
+  aria-label="Menu"
+>
+ <span id="burger-icon"> <img src="/svg/streger_1.svg" alt="Menu" class="w-full h-full" /> 
+ </span><!-- Adjust the src to match your actual filename -->
+  <span id="close-icon" class="hidden">
+    <img src="/svg/kryds_1.svg" alt="Close" class="w-full h-full" /> <!-- Adjust the src to match your actual filename -->
+  </span>
+</button>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 bg-hav-100 bg-opacity-75 flex items-center justify-center transition-opacity duration-300 opacity-0 pointer-events-none">
+    <nav class="text-white font-primary ">
+      <ul class="flex flex-col gap-10 space-y-4">
+        <Button variant="primary"><a href="#section-1">Top</a></Button>
+      <Button variant="primary"><a href="#section-2">Om</a></Button>
+      <Button variant="primary"><a href="#section-3">Udvalgte projekter</a></Button>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Desktop Menu -->
+  <nav class="hidden md:flex bg-hav-100 justify-center py-8">
+    <ul class="flex space-x-4 gap-5">
+      <Button variant="primary">
+        <a href="#section-1" class="block">Top</a>
+      </Button>
+      <Button variant="primary">
+        <a href="#section-2" class="block">Om</a>
+      </Button>
+      <Button variant="primary">
+        <a href="#section-3" class="block">Udvalgte projekter</a>
+      </Button>
+    </ul>
+  </nav>
+  
+
+
+
+
+
+
+  <script>
+    // Reference to elements
+    const burgerButton = document.getElementById('burger-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const burgerIcon = document.getElementById('burger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    // Click event for the burger button
+    burgerButton.addEventListener('click', () => {
+      // Toggle the mobile menu visibility
+      mobileMenu.classList.toggle('opacity-100');
+      mobileMenu.classList.toggle('pointer-events-auto');
+
+      // Toggle the icons
+      burgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    // Optional: Close the menu when clicking outside of it
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu) {
+        // Close the menu and show the burger icon
+        mobileMenu.classList.remove('opacity-100', 'pointer-events-auto');
+        burgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      }
+    });
+  </script>
+</div>

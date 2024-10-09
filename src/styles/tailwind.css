@@ -12,6 +12,10 @@
     background-color: var(--hav-90);
   }
 
+  .bg-hav-80 {
+    background-color: var(--hav-80);
+  }
+
   .bg-hvid {
     background-color: var(--hvid);
   }
@@ -94,7 +98,7 @@
   /* Farver - Primary */
   --hav-100: #007975; 
   --hav-90: #4FA19E;
-  --hav-80: #4FA19E;
+  --hav-80: #9BCDCB;
   --hvid: #FFFFFF;
   --sort: #000000;
 
