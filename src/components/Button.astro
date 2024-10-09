@@ -1,0 +1,19 @@
+---
+
+const {variant="primary", } = Astro.props;
+
+
+// gælder for alle //
+const buttonStyling = "rounded-full px-8 py-2 border-2 border-hav-10 font-primary text-hvid text-medium md:text-large ";
+
+const variantClasses ={
+"primary": "bg-hav-100 hover:bg-hav-10 hover:text-hav-100 hover-border-hav-90",
+"secondary": "bg-grey-90 hover:bg-grey-10 hover:text-grey-90 hover:border-grey-90",
+
+};
+
+
+
+---
+
+<button class:list={[buttonStyling, variantClasses[variant]]}><slot /></button>

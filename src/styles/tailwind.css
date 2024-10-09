@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Baggrundsfarver */
+  .bg-hav-100 {
+    background-color: var(--hav-100);
+  }
+
+  .bg-hav-90 {
+    background-color: var(--hav-90);
+  }
+
+  .bg-hvid {
+    background-color: var(--hvid);
+  }
+
+  .bg-sort {
+    background-color: var(--sort);
+  }
+
+  .bg-grey-90 {
+    background-color: var(--grey-90);
+  }
+
+  .bg-grey-70 {
+    background-color: var(--grey-70);
+  }
+
+  .bg-grey-10 {
+    background-color: var(--grey-10);
+  }
+
+  /* Tekstfarver */
+  .text-hav-100 {
+    color: var(--hav-100);
+  }
+
+  .text-hav-90 {
+    color: var(--hav-90);
+  }
+
+  .text-hvid {
+    color: var(--hvid);
+  }
+
+  .text-sort {
+    color: var(--sort);
+  }
+
+  .text-grey-90 {
+    color: var(--grey-90);
+  }
+
+  .text-grey-70 {
+    color: var(--grey-70);
+  }
+
+  .text-grey-10 {
+    color: var(--grey-10);
+  }
+
+  /* Font */
+  .font-regular {
+    font-weight: var(--font-weight-regular);
+  }
+
+  .font-bold {
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* Størrelser */
+  .text-large {
+    font-size: var(--font-size-large);
+  }
+
+  .text-medium {
+    font-size: var(--font-size-medium);
+  }
+
+  /* Skrifttyper */
+  .font-primary {
+    font-family: var(--primary-font);
+  }
+
+  .font-h1 {
+    font-family: var(--h1-font);
+  }
+}
+
+/* Root variable definitions */
+:root {
+  /* Farver - Primary */
+  --hav-100: #007975; 
+  --hav-90: #4FA19E;
+  --hav-80: #4FA19E;
+  --hvid: #FFFFFF;
+  --sort: #000000;
+
+  /* Farver - Secondary */
+  --grey-90: #303030;
+  --grey-70: #718183;
+  --grey-10: #C9C9C9;
+
+  /* Font */
+  --primary-font: 'proxima-nova', sans-serif; 
+  --h1-font: 'Margot', sans-serif; 
+
+  /* Font størrelser */
+  --font-size-small: 0.875rem; /* 14px */
+  --font-size-medium: 1rem; /* 16px */
+  --font-size-large: 1.25rem; /* 20px */
+
+  /* Font vægte */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-light: 300;
+}
