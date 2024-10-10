@@ -27,6 +27,7 @@ module.exports = {
         'regular': 'var(--font-weight-regular)',
         'bold': 'var(--font-weight-bold)',
         'light': 'var(--font-weight-light)',
+        'extralight': 'var(--font-weight-extralight)'
       },
     },
   },

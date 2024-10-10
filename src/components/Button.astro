@@ -1,10 +1,10 @@
 ---
 
-const {variant="primary", } = Astro.props;
+const {variant="primary", size="small" } = Astro.props;
 
 
 // gælder for alle //
-const buttonStyling = "transition-transform duration-300 ease-in-out transform hover:scale-105 rounded-full px-2 py-4 border border-hav-10 font-primary text-hvid text-medium md:text-large md: w-[197px] md:p-4";
+const buttonStyling = " text-hvid font-extralight transition-transform duration-300 ease-in-out transform hover:scale-105 rounded-full  border border-hav-10 ";
 
 const variantClasses ={
 "primary": "bg-hav-100 hover:bg-hav-80 hover:text-hav-100 hover:border-hav-100",
@@ -12,8 +12,15 @@ const variantClasses ={
 
 };
 
+const sizeClasses={
+    "default": " px-2 py-4 text-medium md:text-large md: w-[197px] md:p-4",
+    "small": " p-2 text-hvid px-4 text-large ",
+    "smaller": " p-2 px-4 text-small md:text-5xl md:px-8 md:pt-6 md:pb-8",
+    "smallest":" p-2 px-4 text-small",
+}
+
 
 
 ---
 
-<button class:list={[buttonStyling, variantClasses[variant]]}><slot /></button>
+<button class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}><slot /></button>

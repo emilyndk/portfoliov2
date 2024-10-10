@@ -45,6 +45,10 @@
     color: var(--hav-90);
   }
 
+  .text-hav-80 {
+    color: var(--hav-80);
+  }
+
   .text-hvid {
     color: var(--hvid);
   }
@@ -108,7 +112,8 @@
   --grey-10: #C9C9C9;
 
   /* Font */
-  --primary-font: 'proxima-nova', sans-serif; 
+ /* --primary-font: 'proxima-nova', sans-serif; */
+  --primary-font: 'quasimoda', sans-serif; 
   --h1-font: 'Margot', sans-serif; 
 
   /* Font størrelser */
@@ -120,4 +125,7 @@
   --font-weight-regular: 400;
   --font-weight-bold: 700;
   --font-weight-light: 300;
+  --font-weight-extralight: 100;
 }
+
+  @import url("https://use.typekit.net/prt2ztm.css");

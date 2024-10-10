@@ -4,43 +4,286 @@ import "../styles/style.css"
 import Button from "../components/Button.astro"
 import MainLayout from "../layouts/MainLayout.astro"
 import Link from "../components/Link.astro"
+import Header from "../components/Header.astro"
+import Card from '../components/Card.astro'
+import Carousel from "../components/Carousel.astro"
+
+
 ---
+
+
+
 <MainLayout title="Webportfolio">
 
-<section id="section-1" class="bg-hav-80">
+<section id="section-1" class="bg-hav-90 px-2 py-4 pb-36 md:py-6 md:pb-36">
 
- <article class="bg-grey-90 border-radius">
+ <article id="grey" class="bg-grey-90 rounded-[40px] p-2 pb-20 my-4 mx-4 md:grid grid-cols-2 md:pb-2 md:mx-16 ">
+
+	<div id="greywithborder" class="bg-grey-90 rounded-[20px] p-4 border border-hvid m-4 pb-4 md:col-start-2 ">
+		<div class="text">
+			<h1 class="font-h1 text-6xl text-hav-80 relative md:text-8xl">
+			Hej
+			<span class="absolute left-0 bottom-[-1px] w-full h-[1px] bg-hvid transform translate-x-[-2%]"></span>
+		    </h1>
+
+		<p class="font-extralight text-hvid mt-4 md:hidden">Jeg hedder Emily. Jeg er 20 år og studerer multimediedesign på Københavns Erhvervsakademi (KEA), hvor jeg er på 3. semester med valgfaget Digital Design. Min kreative tilgang og interesse for kodning gør mig særligt glad for faget, hvor jeg kan kombinere begge dele. <br><br>
+
+			Jeg opfatter mig selv som viljestærk og engageret. Jeg går op i at levere arbejde af høj kvalitet og er altid ivrig efter at lære og udvikle mig i processen.</p>
+
+	
+		<p class="hidden font-primary text-hvid font-extralight mt-4 md:pb-10 md:block text-xl">Jeg hedder Emily. Jeg er 20 år og studerer multimediedesign på Københavns Erhvervsakademi (KEA), hvor jeg er på 3. semester med valgfaget Digital Design. Min kreative tilgang og interesse for kodning <br> gør mig særligt glad for faget, hvor jeg kan kombinere <br> begge dele. <br><br>
+
+				Jeg opfatter mig selv som viljestærk og engageret. Jeg går op i at levere arbejde af høj kvalitet og er altid ivrig <br> efter at lære og udvikle mig i processen.</p>
+	</div>
+		<img class="z-10 absolute w-1/2 top-[78%] left-[22%] md:top-[40%] md:left-[10%] md:w-1/3" src="/public/img/studiekort.png" alt="">
+	</div>
 
 
 
  </article>
 
 
-	</section>
-
-	<section id="section-2" class="bg-hav-100">
+ 
 
 
+
+
+</section>
+
+
+
+
+
+<section id="section-2" class="bg-hav-100 px-2 py-4 pb-24 md:mx-16 md:pt-12">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-48 items-start mx-6 md:mx-0">
+
+		<article id="baggrund" class="bg-hav-90 rounded-[20px] p-4 md:px-9 md:h-full flex flex-col">
+		  <h1 class="font-primary text-3xl text-hvid text-center mt-4">Baggrund</h1>
+		  <ul class="mt-4 custom-list">
+			<li class="list-disc text-hvid font-extralight leading-none mb-4">
+			  Praktik i Imperiet (2019) <br>
+			  <span class="text-xs">Grafisk design</span>
+			</li>
+			<li class="list-disc text-hvid font-extralight leading-none mb-4">
+			  Kastanievej Efterskole (2020-2021) <br>
+			  <span class="text-xs">Billedkunstlinje</span>
+			</li>
+			<li class="list-disc text-hvid font-extralight leading-none mb-4">
+			  Københavns VUC (2021-2023) <br>
+			  <span class="text-xs">HF</span>
+			</li>
+			<li class="list-disc text-hvid font-extralight leading-none mb-4">
+			  Københavns Erhversakademi (2023-2025) <br>
+			  <span class="text-xs">Multimediedesign</span>
+			</li>
+		  </ul>
+		</article>
 		
-	</section>
-
-	<section id="section-3" class="bg-grey-90">
-
-
-		
-	</section>
-
-
-	<section id="section-4" class="bg-hav-80">
-
-
-		
-	</section>
-</MainLayout>
-
-	
-		
+		<article id="kvalifikationer" class="bg-hav-90 rounded-[20px] p-4 md:px-9 md:h-full flex flex-col">
+		  <h1 class="font-primary text-3xl text-hvid text-center mt-4">Kvalifikationer</h1>
+		  <ul class="mt-4 custom-list">
+			<li class="list-disc text-hvid font-extralight leading-none mb-4">Front-end udvikling med HTML, CSS og JavaScript</li>
+			<li class="list-disc text-hvid font-extralight leading-none mb-4">Illustration og grafisk design</li>
+			<li class="list-disc text-hvid font-extralight leading-none mb-4">Adobe CC, Figma og Procreate</li>
+			<li class="list-disc text-hvid font-extralight leading-none mb-4">Projektstyring og struktureret arbejdsgang</li>
+			<li class="list-disc text-hvid font-extralight leading-none mb-4">Flydende engelsk i tale og skrift</li>
+		  </ul>
+		</article>
+	  
+	  </div>
+	  
+	  
+	  
 
 
 
+<article id="hobby" class="mt-24">
 
+<div class="text mb-10">
+		<h1 class="text-3xl text-hvid text-center md:hidden">Hobbyer & <br>interesser</h1>
+		<h1 class="hidden text-3xl text-hvid text-center md:block">Hobbyer & <br>interesser</h1>
+	</div>
+
+
+<div id="illustrationer" class="mx-4 flex flex-row justify-center gap-20">
+
+<div class="mb-1">	
+<img class="w-8 mx-auto md:w-12 " src="/public/svg/penselikon.svg" alt="Pensel ikon">
+<p class="text-hvid text-xs md:text-sm font-extralight text-center">Maling</p>
+</div>
+
+<div class="mb-1">		
+	<img class="w-8 mx-auto md:w-12 " src="/public/svg/blyantikon.svg" alt="Blyant ikon">
+	<p class="text-hvid text-xs md:text-sm font-extralight text-center">Tegning</p>
+</div>
+
+<div class="mb-1">		
+	<img class="w-8 mx-auto md:w-12" src="/public/svg/bogikon.svg" alt="Bog ikon">
+	<p class="text-hvid text-xs md:text-sm font-extralight text-center">Læsning</p>
+	</div>
+
+</div>
+
+
+</article>		
+</section>
+
+
+
+
+<section id="section-3" class="bg-grey-90 p-4 mb-20">
+
+<h1 class="text-hav-80 font-h1 text-4xl text-center md:text-6xl">Udvalgte projekter</h2>
+</section>
+
+<section id="section-4" class="bg-hav-100 px-2 py-4 pb-24">
+    <article class="bg-hav-90 rounded-[20px] mx-2 p-5 pb-12 my-6 md:mx-60">
+        <div class="relative flex items-center justify-center mt-10">
+            <!-- Scroll buttons -->
+            <div id="prevBtn" class="absolute left-[-12%] z-10 md:left-0">
+                <Button variant="secondary" size="smaller">⇦</Button>
+            </div>
+
+            <!-- Card container -->
+            <div class="flex overflow-x-hidden">
+                <div id="cardContainer" class="flex space-x-4 transition-transform duration-500">
+                    <!-- Card 1 -->
+                    <div class="transition-opacity duration-300 ease-in-out hover:opacity-80  rounded-[5px] cursor-pointer  flip-card w-[300px] h-[300px]" onclick="toggleFlip(this)">
+                        <div class="flip-card-inner relative transform transition-transform duration-500">
+                            <div class="flip-card-front bg-cover bg-center h-full w-full flex items-center justify-center" style="background-image: url('/public/img/karrusel-sc.jpg');">
+                                
+                            </div>
+                            <div class="flip-card-back bg-gray-800 p-6 text-hvid flex flex-col items-center justify-center text-center">
+                                <h2 class="text-4xl">Karrusel.dk</h2>
+								
+                                <p class="my-4 text-left font-extralight">Vi fik til opgave at udvikle og kode et redesign til Karrusel Festival. Målet var at få en forståelse af designsystemer og at oprette komponenter og variabler både i figma og i vscode.</p>
+                                <Button variant="secondary" size="smallest"><a href="https://karrusel-team9.netlify.app/">Gå til projekt</a></Button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="transition-opacity duration-300 ease-in-out hover:opacity-80 rounded-[5px] cursor-pointer flip-card w-[300px] h-[300px]" onclick="toggleFlip(this)">
+                        <div class="flip-card-inner relative transform transition-transform duration-500">
+                            <div class="flip-card-front bg-cover bg-center h-full w-full flex items-center justify-center" style="background-image: url('/public/img/digitalskrald-sc.jpg');">
+                            </div>
+                            <div class="flip-card-back bg-gray-800 p-6 text-hvid flex flex-col items-center justify-center text-center">
+                                <h2 class="text-4xl">Digital Cleanup Day</h2>
+                                <p class="my-4 text-left font-extralight">Caseopgaven gik ud på at skabe et redesign til Digital Cleanup Days hjemmeside, men oversat til dansk. Målet var at opbygge erfaring med infografik og datavisualisering.</p>
+                                <Button variant="secondary" size="smallest">Gå til projekt</Button>
+                            </div>
+                        </div>
+                    </div>
+                         <!-- Card 3 -->
+
+					<div class="transition-opacity duration-300 ease-in-out hover:opacity-80 rounded-[5px] cursor-pointer flip-card w-[300px] h-[300px]" onclick="toggleFlip(this)">
+                        <div class="flip-card-inner relative transform transition-transform duration-500">
+                            <div class="flip-card-front bg-cover bg-center h-full w-full flex items-center justify-center" style="background-image: url('/public/img/dferments-sc.jpg');">
+                            </div>
+                            <div class="flip-card-back bg-gray-800 p-6 text-hvid flex flex-col items-center justify-center text-center">
+                                <h2 class="text-4xl">Dferments.dk</h2>
+                                <p class="my-4 text-left font-extralight">Dette var min gruppe og jegs eksamensprojekt fra 2. semester, som vi alle er meget stolte af. Opgaven var at finde en virksomhed og hjælpe dem med at udnytte deres digitale platforme. Derudover designede og udviklede vi en spritny hjemmeside til dem.</p>
+                                <Button variant="secondary" size="smallest"><a href="https://dferments.netlify.app/">Gå til projekt</a></Button>
+                            </div>
+                        </div>
+                    </div>
+
+					  <!-- Card 4 -->
+
+					  <div class="transition-opacity duration-300 ease-in-out hover:opacity-80 rounded-[5px] cursor-pointer flip-card w-[300px] h-[300px]" onclick="toggleFlip(this)">
+                        <div class="flip-card-inner relative transform transition-transform duration-500">
+                            <div class="flip-card-front bg-cover bg-center h-full w-full flex items-center justify-center" style="background-image: url('/public/img/itmv-sc.jpg');">
+                            </div>
+                            <div class="flip-card-back bg-gray-800 p-6 text-hvid flex flex-col items-center justify-center text-center">
+                                <h2 class="text-4xl">I tråd med verden</h2>
+                                <p class="my-4 text-left font-extralight">Casen gik ud på at designe og udvikle en webfeature til en lille virksomhed. ITMV er en tøjbutik, giver nyt liv til kasserede tekstiler bidrage til den grønne omstilling samt skabe jobs til socialt udsatte kvinder.</p>
+                                <Button variant="secondary" size="smallest"><a href="https://itmvgruppe9.netlify.app//">Gå til projekt</a></Button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="nextBtn" class="absolute right-[-12%] z-10 md:right-0">
+                <Button variant="secondary" size="smaller">⇨</Button>
+            </div>
+        </div>
+    </article>
+</section>
+
+
+<div class="flex flex-row justify-center mb-8">
+    <Button variant="primary" size="default"><a href="#section-1">Top</a></Button>
+</div>
+
+
+
+<style>
+    /* Flipping effect */
+    .flip-card {
+        position: relative;
+        overflow: hidden; /* Prevent overflow */
+    }
+
+    .flip-card-inner {
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+        width: 100%;
+        height: 100%;
+    }
+
+    .flip-card.flipped .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+        backface-visibility: hidden;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .flip-card-back {
+        transform: rotateY(180deg);
+        display: flex;
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        flex-direction: column;
+        background-color: var(--grey-70); /* Tailwind gray-800 */
+        text-align: center; /* Center text */
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const cardContainer = document.getElementById("cardContainer");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        let scrollIndex = 0;
+
+        function updateScroll() {
+            cardContainer.style.transform = `translateX(${-scrollIndex * 300}px)`;
+        }
+
+        prevBtn.addEventListener("click", () => {
+            if (scrollIndex > 0) {
+                scrollIndex--;
+                updateScroll();
+            }
+        });
+
+        nextBtn.addEventListener("click", () => {
+            if (scrollIndex < cardContainer.children.length - 1) {
+                scrollIndex++;
+                updateScroll();
+            }
+        });
+
+        window.toggleFlip = function (card) {
+            card.classList.toggle("flipped");
+        }
+    });
+</script>

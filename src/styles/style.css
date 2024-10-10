@@ -1,0 +1,20 @@
+body{
+   background-color: var(--hav-100);
+}
+
+html {
+   scroll-behavior: smooth;
+ }
+ 
+
+.custom-list {
+   list-style-type: disc;
+   padding-left: 1.5rem; /* Adjust padding to make space for the markers */
+ }
+ 
+ .custom-list li::marker {
+   color: var(--grey-90); /* Set your custom color */
+   font-size: 1.2em; /* Optional: adjust size of the marker */
+ }
+ 
+
