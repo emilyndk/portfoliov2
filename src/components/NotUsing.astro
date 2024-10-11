@@ -1,0 +1,74 @@
+<article class="bg-hav-90 rounded-[20px] mx-2 p-5 pb-12 my-6 md:mx-60">
+    <div class="relative flex items-center justify-center mt-10">
+        <!-- Scroll buttons -->
+        <div id="prevBtn" class="absolute left-[-12%] z-10 md:left-0">
+            <Button variant="secondary" size="smaller">⇦</Button>
+        </div>
+
+        <!-- Card container -->
+        <div class="flex overflow-x-hidden">
+            <div id="cardContainer" class="flex space-x-4 transition-transform duration-500">
+                <!-- Card 1 -->
+                <div class="  rounded-[5px] cursor-pointer  flip-card w-[300px] h-[300px]" onclick="toggleFlip(this)">
+                    <div class="flip-card-inner relative transform transition-transform duration-500">
+                        <div class="flip-card-front bg-cover bg-center h-full w-full flex items-center justify-center" style="background-image: url('/public/img/karrusel-sc.jpg');">
+                            
+                        </div>
+                        <div class="flip-card-back bg-gray-800 p-6 text-hvid flex flex-col items-center justify-center text-center">
+                            <h2 class="text-4xl">Karrusel.dk</h2>
+                            
+                            <p class="my-4 text-left font-extralight">Vi fik til opgave at udvikle og kode et redesign til Karrusel Festival. Målet var at få en forståelse af designsystemer og at oprette komponenter og variabler både i figma og i vscode.</p>
+                            <Button variant="secondary" size="smallest"><a href="https://karrusel-team9.netlify.app/">Gå til projekt</a></Button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class=" rounded-[5px] cursor-pointer flip-card w-[300px] h-[300px]" onclick="toggleFlip(this)">
+                    <div class="flip-card-inner relative transform transition-transform duration-500">
+                        <div class="flip-card-front bg-cover bg-center h-full w-full flex items-center justify-center" style="background-image: url('/public/img/digitalskrald-sc.jpg');">
+                        </div>
+                        <div class="flip-card-back bg-gray-800 p-6 text-hvid flex flex-col items-center justify-center text-center">
+                            <h2 class="text-4xl">Digital Cleanup Day</h2>
+                            <p class="my-4 text-left font-extralight">Caseopgaven gik ud på at skabe et redesign til Digital Cleanup Days hjemmeside, men oversat til dansk. Målet var at opbygge erfaring med infografik og datavisualisering.</p>
+                            <Button variant="secondary" size="smallest">Gå til projekt</Button>
+                        </div>
+                    </div>
+                </div>
+                     <!-- Card 3 -->
+
+                <div class="rounded-[5px] cursor-pointer flip-card w-[300px] h-[300px]" onclick="toggleFlip(this)">
+                    <div class="flip-card-inner relative transform transition-transform duration-500">
+                        <div class="flip-card-front bg-cover bg-center h-full w-full flex items-center justify-center" style="background-image: url('/public/img/dferments-sc.jpg');">
+                        </div>
+                        <div class="flip-card-back bg-gray-800 p-6 text-hvid flex flex-col items-center justify-center text-center">
+                            <h2 class="text-4xl">Dferments.dk</h2>
+                            <p class="my-4 text-left font-extralight">Dette var min gruppe og jegs eksamensprojekt fra 2. semester, som vi alle er meget stolte af. Opgaven var at finde en virksomhed og hjælpe dem med at udnytte deres digitale platforme. Derudover designede og udviklede vi en spritny hjemmeside til dem.</p>
+                            <Button variant="secondary" size="smallest"><a href="https://dferments.netlify.app/">Gå til projekt</a></Button>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- Card 4 -->
+
+                  <div class=" rounded-[5px] cursor-pointer flip-card w-[300px] h-[300px]" onclick="toggleFlip(this)">
+                    <div class="flip-card-inner relative transform transition-transform duration-500">
+                        <div class="flip-card-front bg-cover bg-center h-full w-full flex items-center justify-center" style="background-image: url('/public/img/itmv-sc.jpg');">
+                        </div>
+                        <div class="flip-card-back bg-gray-800 p-6 text-hvid flex flex-col items-center justify-center text-center">
+                            <h2 class="text-4xl">I tråd med verden</h2>
+                            <p id="text" class="my-4 text-left font-extralight">Casen gik ud på at designe og udvikle en webfeature til en lille virksomhed. ITMV er en tøjbutik, giver nyt liv til kasserede tekstiler bidrage til den grønne omstilling samt skabe jobs til socialt udsatte kvinder.</p>
+                            <a class="mb-3 justify-self-end" href="#" id="read-more" onclick="toggleText(event)">Read more</a>
+                            <Button variant="secondary" size="smallest"><a href="https://itmvgruppe9.netlify.app//">Gå til projekt</a></Button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="nextBtn" class="absolute right-[-12%] z-10 md:right-0">
+            <Button variant="secondary" size="smaller">⇨</Button>
+        </div>
+    </div>
+</article>

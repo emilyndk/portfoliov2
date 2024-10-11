@@ -10,7 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.15.12"
+    "astro": "^4.15.12",
+    "swiper": "^11.1.14"
   },
   "description": "```sh npm create astro@latest -- --template minimal ```",
   "main": "index.js",
