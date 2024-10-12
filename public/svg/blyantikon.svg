@@ -3,20 +3,20 @@
   <defs>
     <style>
       .cls-1 {
-        fill: none;
+        fill: #fff;
       }
 
       .cls-1, .cls-2 {
-        stroke: #4fa19e;
+        stroke: #a2b0b6;
         stroke-miterlimit: 10;
       }
 
       .cls-3 {
-        fill: #4fa19e;
+        fill: #a2b0b6;
       }
 
       .cls-2 {
-        fill: #fff;
+        fill: none;
       }
     </style>
   </defs>
@@ -24,11 +24,11 @@
     <g>
       <circle class="cls-3" cx="63.07" cy="63.07" r="63.07"/>
       <g>
-        <polyline class="cls-2" points="39.23 72.71 79.26 25.2 94.6 38.13 54.57 85.64"/>
-        <polyline class="cls-2" points="39.43 72.47 26.35 103.57 54.78 85.4"/>
-        <path class="cls-2" d="M80.73,21.17h20.07v5.85c0,3.33-2.71,6.04-6.04,6.04h-7.99c-3.33,0-6.04-2.71-6.04-6.04v-5.85h0Z" transform="translate(142.7 106.34) rotate(-139.88)"/>
-        <polyline class="cls-1" points="54.57 85.64 54.27 82.11 50.74 82.41 50.43 78.88 46.9 79.18 46.59 75.65 43.06 75.94 42.76 72.42 39.23 72.71"/>
-        <polygon class="cls-1" points="39.51 95.16 32.41 89.17 26.35 103.57 39.51 95.16"/>
+        <polyline class="cls-1" points="39.23 72.71 79.26 25.2 94.6 38.13 54.57 85.64"/>
+        <polyline class="cls-1" points="39.43 72.47 26.35 103.57 54.78 85.4"/>
+        <path class="cls-1" d="M80.73,21.17h20.07v5.85c0,3.33-2.71,6.04-6.04,6.04h-7.99c-3.33,0-6.04-2.71-6.04-6.04v-5.85h0Z" transform="translate(142.7 106.34) rotate(-139.88)"/>
+        <polyline class="cls-2" points="54.57 85.64 54.27 82.11 50.74 82.41 50.43 78.88 46.9 79.18 46.59 75.65 43.06 75.94 42.76 72.42 39.23 72.71"/>
+        <polygon class="cls-2" points="39.51 95.16 32.41 89.17 26.35 103.57 39.51 95.16"/>
       </g>
     </g>
   </g>

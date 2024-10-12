@@ -13,10 +13,19 @@ module.exports = {
         'grey-90': 'var(--grey-90)',
         'grey-70': 'var(--grey-70)',
         'grey-10': 'var(--grey-10)',
+        'blue-100': 'var(--blue-100)',
+        'blue-90': 'var(--blue-90)',
+        'blue-20': 'var(--blue-20)',
+        'pink-100': 'var(--pink-100)',
+        'pink-50': 'var(--pink-50)',
+        'pink-hover': 'var(--pink-hover)',
       },
       fontFamily: {
         'primary': ['var(--primary-font)', 'sans-serif'],
         'h1': ['var(--h1-font)', 'sans-serif'],
+        'sansation': ['var(--sansation)', 'sans-serif'],
+        'operetta': ['var(--operetta)'],
+        'seasons':['var(--seasons)']
       },
       fontSize: {
         'small': 'var(--font-size-small)',

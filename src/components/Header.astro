@@ -4,7 +4,7 @@ import Link from "./Link.astro"
 ---
 
 
-<div class="bg-hav-100 py-10 md:py-4">
+<div class="bg-blue-90 py-10 md:py-4">
   <!-- Burger Icon -->
    
   <button
@@ -20,27 +20,27 @@ import Link from "./Link.astro"
 </button>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="fixed inset-0 bg-hav-100 bg-opacity-75 flex items-center justify-center transition-opacity duration-300 opacity-0 pointer-events-none">
+  <div id="mobile-menu" class="fixed inset-0 bg-blue-90 bg-opacity-75 flex items-center justify-center transition-opacity duration-300 opacity-0 pointer-events-none">
     <nav class="text-white font-primary ">
       <ul class="flex flex-col gap-10 space-y-4">
         <Button variant="primary" size="default"><a href="#">Top</a></Button>
-      <Button variant="primary" size="default"><a href="#section-2">Om mig</a></Button>
-      <Button variant="primary" size="default"><a href="#section-3">Udvalgte projekter</a></Button>
+      <Button variant="primary" size="default"><a href="#om-mig">Om mig</a></Button>
+      <Button variant="primary" size="default"><a href="#section-4">Udvalgte projekter</a></Button>
       </ul>
     </nav>
   </div>
 
   <!-- Desktop Menu -->
-  <nav class="hidden md:flex bg-hav-100 justify-center">
+  <nav class="hidden md:flex bg-blue-90 justify-center">
     <ul class="flex space-x-4 gap-5">
       <Button variant="primary" size="default">
         <a href="#" class="block">Top</a>
       </Button>
       <Button variant="primary" size="default">
-        <a href="#section-2" class="block">Om mig</a>
+        <a href="#om-mig" class="block">Om mig</a>
       </Button>
       <Button variant="primary" size="default">
-        <a href="#section-3" class="block">Udvalgte projekter</a>
+        <a href="#section-4" class="block">Udvalgte projekter</a>
       </Button>
     </ul>
   </nav>

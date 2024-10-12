@@ -68,6 +68,58 @@
   .text-grey-10 {
     color: var(--grey-10);
   }
+  /*nye farver*/
+
+
+  .text-blue-100{
+    color: var(--blue-100);
+  }
+
+  .text-blue-90{
+    color: var(--blue-90);
+  }
+
+  .text-blue-20{
+    color: var(--blue-20);
+  }
+
+  .text-pink-100{
+    color: var(--pink-100);
+  }
+
+  .text-pink-50{
+    color: var(--pink-50);
+  }
+
+  .text-pink-hover{
+    color: var(--pink-hover);
+  }
+
+  .bg-blue-100{
+    background-color: var(--blue-100);
+  }
+
+  .bg-blue-90{
+    background-color: var(--blue-90);
+  }
+
+  .bg-blue-20{
+    background-color: var(--blue-20);
+  }
+
+  .bg-pink-100{
+    background-color: var(--pink-100);
+  }
+
+  .bg-pink-50{
+    background-color: var(--pink-50);
+  }
+
+  .bg-pink-hover{
+    background-color: var(--pink-hover);
+  }
+
+
 
   /* Font */
   .font-regular {
@@ -95,6 +147,18 @@
   .font-h1 {
     font-family: var(--h1-font);
   }
+
+  .font-sansation{
+    font-family: var(--sansation);
+  }
+
+  .font-operetta{
+    font-family: var(--operetta);
+  }
+
+  .font-seasons{
+    font-family: var(--seasons);
+  }
 }
 
 /* Root variable definitions */
@@ -111,10 +175,26 @@
   --grey-70: #718183;
   --grey-10: #C9C9C9;
 
+
+  /* nye farver */
+
+  --blue-100:#1F2D32;
+  --blue-90:#4C656F;
+  --blue-20:#A2B0B6;
+  --pink-100:#BC1359;
+  --pink-50:#EB4C8E;
+  --pink-hover:#E1CED6;
+  
+
+
   /* Font */
  /* --primary-font: 'proxima-nova', sans-serif; */
   --primary-font: 'quasimoda', sans-serif; 
   --h1-font: 'Margot', sans-serif; 
+  --sansation:'Sansation Light';
+  --operetta:'operetta-12';
+  --seasons:"the-seasons";
+
 
   /* Font størrelser */
   --font-size-small: 0.875rem; /* 14px */
@@ -129,3 +209,13 @@
 }
 
   @import url("https://use.typekit.net/prt2ztm.css");
+  @import url("https://use.typekit.net/prt2ztm.css");
+  @import url("https://use.typekit.net/prt2ztm.css");
+
+
+  @font-face {
+    font-family: 'Sansation Light';
+    src: url('/fonts/Sansation-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}

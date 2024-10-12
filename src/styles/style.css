@@ -1,5 +1,5 @@
 body{
-   background-color: var(--hav-100);
+   background-color: var(--blue-90);
 
    
 }
@@ -15,7 +15,7 @@ html {
  }
  
  .custom-list li::marker {
-   color: var(--grey-90); /* Set your custom color */
+   color: var(--hvid); /* Set your custom color */
    font-size: 1.2em; /* Optional: adjust size of the marker */
  }
  
@@ -52,7 +52,7 @@ html {
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
     flex-direction: column;
-    background-color: var(--grey-70); /* Tailwind gray-800 */
+    background-color: var(--blue-100); /* Tailwind gray-800 */
     text-align: center; /* Center text */
 }
 
@@ -108,19 +108,19 @@ html {
 
 /* The scrollbar thumb */
 .card-text::-webkit-scrollbar-thumb {
-  background: var(--grey-90); /* Color of the thumb */
+  background: var(--hvid); /* Color of the thumb */
   border-radius: 10px; /* More rounded corners */
 }
 
 /* The scrollbar thumb on hover */
 .card-text::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Darker color when hovering */
+  background: var(--pink-50); /* Darker color when hovering */
 }
 
 /* Custom scrollbar styles for Firefox */
 .card-text {
   scrollbar-width: thin; /* Make the scrollbar thin */
-  scrollbar-color: var(--grey-90) transparent; /* Thumb color and track color */
+  scrollbar-color: var(--hvid) transparent; /* Thumb color and track color */
 }
 
 .flip-card-back, .flip-card-front{
@@ -130,4 +130,20 @@ html {
 .flip-card-back:hover, .flip-card-front:hover{
   border: 2px solid white;
   transition: 0.4s ease;
+}
+
+.underlinestyle {
+  font-size: 2rem;
+  color: white;
+  border-bottom: 2px solid white;  /* Controls thickness and color */
+  padding-bottom: 2px;               /* Adjust spacing between text and underline */
+}
+
+
+
+
+
+
+h2{
+  font-family: 'operetta-12';
 }
