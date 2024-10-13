@@ -111,7 +111,7 @@ import Cards from "../components/Cards.astro"
 
 <div class="text mb-10">
 		<h1 class="text-3xl font-seasons text-hvid text-center md:hidden">Hobbyer & <br>interesser</h1>
-		<h1 class="hidden font-seasons text-3xl text-hvid text-center md:block">Hobbyer & <br>interesser</h1>
+		<h1 class="hidden font-seasons text-3xl text-hvid text-center md:block">Hobbyer & interesser</h1>
 	</div>
 
 
@@ -227,9 +227,66 @@ import Cards from "../components/Cards.astro"
 </section>
 
 
-<div class="flex flex-row justify-center my-8">
+<section id="section-5">
+<h2 class="my-16 text-3xl font-seasons text-hvid text-center">Kontakt</h2>
+
+
+
+
+
+   
+   
+
+
+    <div class="mb-4 flex flex-row justify-center gap-5"> <a href="tel:+4542416188"><img class="hovereffekt-illu w-10 md:w-12 " src="/svg/mailikon.svg" alt="Mail ikon"></a>
+
+        <p class="link hovereffekt-a text-white font-extralight mt-2 ">
+            <a href="mailto:emily.nielsen09@gmail.com">emily.nielsen09@gmail.com</a>
+        </p>
+    
+    </div>
+
+    
+<div class=" mb-4 flex flex-row justify-center gap-5"> <a href="tel:+4542416188"><img class="hovereffekt-illu w-10 md:w-12 " src="/svg/tlfikon_2.svg" alt="Telefon ikon"></a>
+
+    <p class="link  hovereffekt-a text-white font-extralight mt-2 ">
+        <a href="tel:+4542416188">+45 42416188</a>
+    </p>
+
+</div>
+
+<div class="mb-8 flex flex-row justify-center gap-5"> <a href="https://www.instagram.com/exiongart/"><img class="hovereffekt-illu  w-10 md:w-12 " src="/svg/igikon_1.svg" alt="Instagram ikon"></a>
+
+    <p class="link hovereffekt-a text-white font-extralight mt-2 ">
+        <a href="https://www.instagram.com/exiongart/">exiongart</a>
+    </p>
+
+</div>
+
+
+
+    
+</div>
+
+
+<style>
+    .link {
+    width: 150px; /* Adjust this width to fit your design */
+    text-align: left; /* Center the text */
+}
+
+</style>
+
+
+<div class="flex flex-row justify-center my-16">
+
+
     <Button variant="primary" size="default"><a href="#">Top</a></Button>
 </div>
+
+
+
+</section>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         window.toggleFlip = function (card) {
