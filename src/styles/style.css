@@ -3,8 +3,7 @@ body {
 }
 
 ::selection {
-  color: var(--blue-20);
-  background: var(--blue-100);
+  background:var(--pink-50);
 }
 
 html {
