@@ -2,6 +2,11 @@ body {
   background-color: var(--blue-90);
 }
 
+::selection {
+  color: var(--blue-20);
+  background: var(--blue-100);
+}
+
 html {
   scroll-behavior: smooth;
 }
